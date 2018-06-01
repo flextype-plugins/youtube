@@ -1,2 +1,44 @@
-# youtube
-Youtube plugins allows you to insert YouTube videos.
+# Youtube Plugin for [Flextype](http://flextype.org/)
+![version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg?style=flat-square)
+![Flextype](https://img.shields.io/badge/Flextype-0.x-green.svg?style=flat-square)
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+
+Youtube plugins allows you to insert YouTube videos into the page.
+
+## Installation
+1. Unzip plugin to the folder `/site/plugins/`
+2. Go to `/site/config/site.yaml` and add plugin name to plugins section.
+3. Save your changes.
+
+Example:
+```
+plugins:
+  - youtube
+```
+
+## Usage in page content
+
+```
+[youtube url="https://www.youtube.com/watch?v=iYnliHrcQyo"]
+```
+
+## Usage in the template
+
+Define Flextype namespace in the template if it is not defined yet.
+```
+<?php namespace Flextype; ?>
+```
+
+Display YouTube video
+```
+<?php echo youtube('https://www.youtube.com/watch?v=iYnliHrcQyo'); ?>
+```
+
+## Settings
+
+```yaml
+enabled: true # or `false` to disable the plugin
+```
+
+## License
+See [LICENSE](https://github.com/flextype-plugins/youtube/blob/master/LICENSE)
