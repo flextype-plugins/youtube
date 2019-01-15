@@ -20,7 +20,7 @@ use Flextype\Component\Event\Event;
 Event::addListener('onShortcodesInitialized', function () {
 
     // Shortcode: [youtube url="https://www.youtube.com/watch?v=iYnliHrcQyo"]
-    Content::shortcode()->addHandler('youtube', function(ShortcodeInterface $s) {
+    Entries::shortcode()->addHandler('youtube', function(ShortcodeInterface $s) {
         return youtube($s->getParameter('url'),
                        ((null !== $s->getParameter('width')) ? $s->getParameter('width') : 560 ),
                        ((null !== $s->getParameter('height')) ? $s->getParameter('height') : 315 ));
