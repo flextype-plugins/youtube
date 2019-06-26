@@ -28,7 +28,7 @@ Display YouTube video
 
 ## Settings
 
-```yaml
+```json
 {
     "enabled": true
 }
