@@ -29,7 +29,9 @@ Display YouTube video
 ## Settings
 
 ```yaml
-enabled: true # or `false` to disable the plugin
+{
+    "enabled": true
+}
 ```
 
 ## License
