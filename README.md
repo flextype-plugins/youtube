@@ -1,6 +1,6 @@
 # Youtube Plugin for [Flextype](http://flextype.org/)
-![version](https://img.shields.io/badge/version-1.0.4-brightgreen.svg?style=flat-square)
-![Flextype](https://img.shields.io/badge/Flextype-0.9.1-green.svg?style=flat-square)
+![version](https://img.shields.io/badge/version-1.0.5-brightgreen.svg?style=flat-square)
+![Flextype](https://img.shields.io/badge/Flextype-0.9.4-green.svg?style=flat-square)
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
 Youtube plugins allows you to insert YouTube videos into the page.
@@ -16,23 +16,16 @@ Unzip plugin to the folder `/site/plugins/`
 
 ## Usage in the template
 
-Define Flextype namespace in the template if it is not defined yet.
-```
-<?php namespace Flextype; ?>
-```
-
 Display YouTube video
 ```
-<?= youtube('https://www.youtube.com/watch?v=iYnliHrcQyo') ?>
+{{ youtube('https://www.youtube.com/watch?v=iYnliHrcQyo') }}
 ```
 
 ## Settings
 
-```json
-{
-    "enabled": true
-}
+```yaml
+enabled: true
 ```
 
-## License
-See [LICENSE](https://github.com/flextype-plugins/youtube/blob/master/LICENSE)
+## LICENSE
+[The MIT License (MIT)](https://github.com/flextype-plugins/sitemap/blob/master/LICENSE) Copyright (c) 2018-2019 [Sergey Romanenko](https://github.com/Awilum)
